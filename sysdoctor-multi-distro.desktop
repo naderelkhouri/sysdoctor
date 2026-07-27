@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=SysDoctor
+Comment=Monitor e manutenção de sistemas Linux
+Exec=/home/nader/.local/bin/sysdoctor
+Terminal=true
+Icon=/home/nader/.local/share/icons/sysdoctor.png
+Categories=System;
+StartupNotify=true
+TryExec=/home/nader/.local/bin/sysdoctor

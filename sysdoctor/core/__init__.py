@@ -1,0 +1,3 @@
+"""
+Módulo core do SysDoctor.
+"""

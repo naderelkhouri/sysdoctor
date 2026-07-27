@@ -1,0 +1,11 @@
+[Unit]
+Description=SysDoctor Automated System Maintenance Service
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/sysdoctor --fix
+User=root
+
+[Install]
+WantedBy=multi-user.target

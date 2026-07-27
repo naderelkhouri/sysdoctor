@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=2.0
+Type=Application
+Name=SysDoctor
+Comment=Diagnóstico, Monitoramento e Manutenção para Linux
+Exec=sysdoctor
+Terminal=true
+Icon=sysdoctor
+Categories=System;Monitor;Utility;
+StartupNotify=true

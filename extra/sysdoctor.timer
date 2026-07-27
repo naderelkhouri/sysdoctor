@@ -1,0 +1,9 @@
+[Unit]
+Description=SysDoctor Maintenance Schedule (Daily)
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target
