@@ -130,8 +130,8 @@
     "semantic_hash": ""
   },
   "tests/__init__.py": {
-    "mtime": 1787341500.5973988,
-    "ast_hash": "cbb18838c62262a2d471ae576616b0c6",
+    "mtime": 1787411316.795167,
+    "ast_hash": "1e5bbc226c2414921f4a14933abf304e",
     "semantic_hash": ""
   },
   "tests/test_health.py": {
@@ -157,6 +157,11 @@
   "Imagem colada.png": {
     "mtime": 1787341500.5932946,
     "ast_hash": "1002bbcd4b04a78a933873b0df5b1406",
+    "semantic_hash": ""
+  },
+  "docs/reports/RESUMO-SESSAO-2026-08-21.md": {
+    "mtime": 1787355810.3924627,
+    "ast_hash": "2e8b57243a97b892b7a05e9408280ab3",
     "semantic_hash": ""
   }
 }
