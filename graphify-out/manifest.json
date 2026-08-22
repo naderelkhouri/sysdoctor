@@ -1,0 +1,162 @@
+{
+  "SysDoctor - Multi-Distro/SysDoctor_Multi-Distro.py": {
+    "mtime": 1787341500.5942945,
+    "ast_hash": "57891923720c49ec36699a400f227d60",
+    "semantic_hash": ""
+  },
+  "SysDoctor_Multi-Distro.py": {
+    "mtime": 1787341500.5942945,
+    "ast_hash": "7d1c845ecbc7d03b1bc9e3e23c61cce1",
+    "semantic_hash": ""
+  },
+  "sysdoctor-multi-distro-terminal": {
+    "mtime": 1787341500.5947523,
+    "ast_hash": "e0a576ce33a8382e1da4c07aa5d7196c",
+    "semantic_hash": ""
+  },
+  "sysdoctor/__init__.py": {
+    "mtime": 1787341500.5947523,
+    "ast_hash": "6b458f371079f369f3f654f5ee86143b",
+    "semantic_hash": ""
+  },
+  "sysdoctor/__main__.py": {
+    "mtime": 1787341500.5950282,
+    "ast_hash": "292268dbcf36fc371dd3370a8a84ddc8",
+    "semantic_hash": ""
+  },
+  "sysdoctor/cli.py": {
+    "mtime": 1787341500.5950282,
+    "ast_hash": "fcc842d529568f1a1a023edac7724415",
+    "semantic_hash": ""
+  },
+  "sysdoctor/core/__init__.py": {
+    "mtime": 1787341500.5950282,
+    "ast_hash": "b713243cad9be75e5974be7c050a2cc3",
+    "semantic_hash": ""
+  },
+  "sysdoctor/core/cleaner.py": {
+    "mtime": 1787341500.5952547,
+    "ast_hash": "4e538da549dce9058ec7b42670848985",
+    "semantic_hash": ""
+  },
+  "sysdoctor/core/health.py": {
+    "mtime": 1787341500.5952547,
+    "ast_hash": "aaf45f57679cb6d5d6ad4e28ac5bc9a8",
+    "semantic_hash": ""
+  },
+  "sysdoctor/core/reporter.py": {
+    "mtime": 1787341500.5952547,
+    "ast_hash": "4ed4607d36f18695ec761a8d1cd496b9",
+    "semantic_hash": ""
+  },
+  "sysdoctor/core/system.py": {
+    "mtime": 1787341500.5952947,
+    "ast_hash": "a694e282b7284d47ea2c0dc26d05b382",
+    "semantic_hash": ""
+  },
+  "sysdoctor/package_managers/__init__.py": {
+    "mtime": 1787341500.5952947,
+    "ast_hash": "6f9374ec5727404fca23c14bb6eddfa4",
+    "semantic_hash": ""
+  },
+  "sysdoctor/package_managers/apk.py": {
+    "mtime": 1787341500.5958304,
+    "ast_hash": "ba400b9bbb8345cd7d8fdec4e8e7ef9f",
+    "semantic_hash": ""
+  },
+  "sysdoctor/package_managers/apt.py": {
+    "mtime": 1787341500.5958304,
+    "ast_hash": "d784eee802cd71f0b389f559fc2ffde8",
+    "semantic_hash": ""
+  },
+  "sysdoctor/package_managers/base.py": {
+    "mtime": 1787341500.5958304,
+    "ast_hash": "00bcd2573f42f8f82ee9a069c05cc16e",
+    "semantic_hash": ""
+  },
+  "sysdoctor/package_managers/dnf.py": {
+    "mtime": 1787341500.5958304,
+    "ast_hash": "5becc5b01bfc5943f998874a674458b9",
+    "semantic_hash": ""
+  },
+  "sysdoctor/package_managers/flatpak.py": {
+    "mtime": 1787341500.5958304,
+    "ast_hash": "f26be15e0b366583e9c4280c8b94b3c1",
+    "semantic_hash": ""
+  },
+  "sysdoctor/package_managers/pacman.py": {
+    "mtime": 1787341500.5958304,
+    "ast_hash": "f44f14a1af21851c73811cf27abb5017",
+    "semantic_hash": ""
+  },
+  "sysdoctor/package_managers/snap.py": {
+    "mtime": 1787341500.5958304,
+    "ast_hash": "8281bd57a0901e2694f38e7c8b076e30",
+    "semantic_hash": ""
+  },
+  "sysdoctor/package_managers/zypper.py": {
+    "mtime": 1787341500.5958304,
+    "ast_hash": "e8b1f92512298d524c38ef8334d43c1a",
+    "semantic_hash": ""
+  },
+  "sysdoctor/ui/__init__.py": {
+    "mtime": 1787341500.5958304,
+    "ast_hash": "85ee5de4455e3329f9e7ab6cd48bfadd",
+    "semantic_hash": ""
+  },
+  "sysdoctor/ui/dashboard.py": {
+    "mtime": 1787341500.5964642,
+    "ast_hash": "cd64d172af132c2ba496ed0e9ec631bd",
+    "semantic_hash": ""
+  },
+  "sysdoctor/ui/theme.py": {
+    "mtime": 1787341500.5964642,
+    "ast_hash": "efb6604d0de8a6d43c9220299fde651f",
+    "semantic_hash": ""
+  },
+  "sysdoctor/ui/views.py": {
+    "mtime": 1787341500.5964642,
+    "ast_hash": "b221725fbc38a8412a860e8eb70af9db",
+    "semantic_hash": ""
+  },
+  "sysdoctor/utils/logger.py": {
+    "mtime": 1787341500.5964642,
+    "ast_hash": "2ac13fc2d7e688cd8096dfb8f6b5f740",
+    "semantic_hash": ""
+  },
+  "sysdoctor/utils/runner.py": {
+    "mtime": 1787341500.5973988,
+    "ast_hash": "3a4170d331930d66bd713d3b052545b8",
+    "semantic_hash": ""
+  },
+  "tests/__init__.py": {
+    "mtime": 1787341500.5973988,
+    "ast_hash": "cbb18838c62262a2d471ae576616b0c6",
+    "semantic_hash": ""
+  },
+  "tests/test_health.py": {
+    "mtime": 1787341500.5975976,
+    "ast_hash": "0743ad6bff3a1a1dacb944d0a8234dbe",
+    "semantic_hash": ""
+  },
+  "tests/test_package_managers.py": {
+    "mtime": 1787341500.5975976,
+    "ast_hash": "f874b0ca1a6f0528c161c1f50731e7fe",
+    "semantic_hash": ""
+  },
+  "tests/test_system.py": {
+    "mtime": 1787341500.5975976,
+    "ast_hash": "db85a043c4d73545d194239b2b756e10",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1787341500.5932946,
+    "ast_hash": "ba4c8700146a8066b46c6045e2270c62",
+    "semantic_hash": ""
+  },
+  "Imagem colada.png": {
+    "mtime": 1787341500.5932946,
+    "ast_hash": "1002bbcd4b04a78a933873b0df5b1406",
+    "semantic_hash": ""
+  }
+}
