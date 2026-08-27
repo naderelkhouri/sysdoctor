@@ -81,7 +81,7 @@ def generate_dashboard_grid() -> Layout:
     left_table.add_row("Swap Usado", make_progress_bar(metrics.swap_percent))
 
     for disk in metrics.disks:
-        left_table.add_row(f"Disco {disk['mountpoint']}", make_progress_bar(disk["percent"]))
+        left_table.add_row(f"Disco {disk.mountpoint}", make_progress_bar(disk.percent))
 
     layout["left"].update(Panel(left_table, title="[bold]📊 Recursos em Tempo Real[/bold]", border_style="green"))
 

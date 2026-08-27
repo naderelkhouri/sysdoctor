@@ -105,8 +105,8 @@
     "semantic_hash": ""
   },
   "sysdoctor/ui/dashboard.py": {
-    "mtime": 1787341500.5964642,
-    "ast_hash": "cd64d172af132c2ba496ed0e9ec631bd",
+    "mtime": 1787838128.103961,
+    "ast_hash": "beda3c56649b488a21dd290f727a4bed",
     "semantic_hash": ""
   },
   "sysdoctor/ui/theme.py": {
@@ -177,6 +177,11 @@
   "docs/specs/SPEC-SYSDOCTOR-V2.md": {
     "mtime": 1787837295.8129792,
     "ast_hash": "aa57e7fd405e7fafa7f78fef90d5318c",
+    "semantic_hash": ""
+  },
+  "tests/test_dashboard.py": {
+    "mtime": 1787850325.1815262,
+    "ast_hash": "5bfdbaf878be53df4874b343a8f31462",
     "semantic_hash": ""
   }
 }
