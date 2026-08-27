@@ -560,7 +560,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "core_reporter_build_full_report",
-      "community": 0,
+      "community": 1,
       "norm_label": "build_full_report()"
     },
     {
@@ -570,7 +570,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "sysdoctor_core_reporter_py_any",
-      "community": 0,
+      "community": 1,
       "norm_label": "any"
     },
     {
@@ -600,7 +600,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "core_reporter_rationale_14",
-      "community": 0,
+      "community": 1,
       "norm_label": "coleta metricas, checa atualizacoes de pacotes e calcula o health score."
     },
     {
@@ -790,7 +790,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_apk",
-      "community": 4,
+      "community": 10,
       "norm_label": "apk.py"
     },
     {
@@ -800,7 +800,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "package_managers_apk_apkpackagemanager",
-      "community": 4,
+      "community": 10,
       "norm_label": "apkpackagemanager"
     },
     {
@@ -810,7 +810,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "basepackagemanager",
-      "community": 3,
+      "community": 13,
       "norm_label": "basepackagemanager"
     },
     {
@@ -820,7 +820,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "package_managers_apk_apkpackagemanager_name",
-      "community": 4,
+      "community": 10,
       "norm_label": ".name()"
     },
     {
@@ -830,7 +830,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "package_managers_apk_apkpackagemanager_is_available",
-      "community": 4,
+      "community": 10,
       "norm_label": ".is_available()"
     },
     {
@@ -840,7 +840,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "package_managers_apk_apkpackagemanager_check_updates",
-      "community": 4,
+      "community": 10,
       "norm_label": ".check_updates()"
     },
     {
@@ -850,7 +850,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "sysdoctor_package_managers_apk_py_any",
-      "community": 4,
+      "community": 10,
       "norm_label": "any"
     },
     {
@@ -860,7 +860,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "package_managers_apk_apkpackagemanager_auto_fix",
-      "community": 4,
+      "community": 10,
       "norm_label": ".auto_fix()"
     },
     {
@@ -870,7 +870,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "package_managers_apk_apkpackagemanager_clean_cache",
-      "community": 4,
+      "community": 10,
       "norm_label": ".clean_cache()"
     },
     {
@@ -880,7 +880,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_apk_rationale_1",
-      "community": 4,
+      "community": 10,
       "norm_label": "gerenciador de pacotes apk (alpine linux)."
     },
     {
@@ -900,7 +900,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "package_managers_apt_aptpackagemanager",
-      "community": 3,
+      "community": 13,
       "norm_label": "aptpackagemanager"
     },
     {
@@ -910,7 +910,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "package_managers_apt_aptpackagemanager_name",
-      "community": 3,
+      "community": 13,
       "norm_label": ".name()"
     },
     {
@@ -920,7 +920,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "package_managers_apt_aptpackagemanager_is_available",
-      "community": 3,
+      "community": 13,
       "norm_label": ".is_available()"
     },
     {
@@ -930,7 +930,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "package_managers_apt_aptpackagemanager_check_updates",
-      "community": 3,
+      "community": 13,
       "norm_label": ".check_updates()"
     },
     {
@@ -940,7 +940,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "sysdoctor_package_managers_apt_py_any",
-      "community": 3,
+      "community": 13,
       "norm_label": "any"
     },
     {
@@ -950,7 +950,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "package_managers_apt_aptpackagemanager_auto_fix",
-      "community": 3,
+      "community": 13,
       "norm_label": ".auto_fix()"
     },
     {
@@ -960,7 +960,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "package_managers_apt_aptpackagemanager_clean_cache",
-      "community": 3,
+      "community": 13,
       "norm_label": ".clean_cache()"
     },
     {
@@ -980,7 +980,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_base",
-      "community": 4,
+      "community": 14,
       "norm_label": "base.py"
     },
     {
@@ -990,7 +990,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "package_managers_base_basepackagemanager",
-      "community": 4,
+      "community": 14,
       "norm_label": "basepackagemanager"
     },
     {
@@ -1000,7 +1000,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "abc",
-      "community": 4,
+      "community": 14,
       "norm_label": "abc"
     },
     {
@@ -1010,7 +1010,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "package_managers_base_basepackagemanager_name",
-      "community": 4,
+      "community": 14,
       "norm_label": ".name()"
     },
     {
@@ -1020,7 +1020,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "package_managers_base_basepackagemanager_is_available",
-      "community": 4,
+      "community": 14,
       "norm_label": ".is_available()"
     },
     {
@@ -1050,7 +1050,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "package_managers_base_basepackagemanager_auto_fix",
-      "community": 4,
+      "community": 14,
       "norm_label": ".auto_fix()"
     },
     {
@@ -1060,7 +1060,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "package_managers_base_basepackagemanager_clean_cache",
-      "community": 4,
+      "community": 14,
       "norm_label": ".clean_cache()"
     },
     {
@@ -1070,7 +1070,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_base_rationale_1",
-      "community": 4,
+      "community": 14,
       "norm_label": "classe base abstrata para gerenciadores de pacotes linux."
     },
     {
@@ -1080,7 +1080,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "package_managers_base_rationale_13",
-      "community": 4,
+      "community": 14,
       "norm_label": "nome legivel do gerenciador de pacotes."
     },
     {
@@ -1090,7 +1090,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "package_managers_base_rationale_18",
-      "community": 4,
+      "community": 14,
       "norm_label": "verifica se o gerenciador esta instalado no sistema."
     },
     {
@@ -1110,7 +1110,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "package_managers_base_rationale_36",
-      "community": 4,
+      "community": 14,
       "norm_label": "realiza atualizacao e limpeza de pacotes pendentes."
     },
     {
@@ -1120,7 +1120,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "package_managers_base_rationale_41",
-      "community": 4,
+      "community": 14,
       "norm_label": "limpa caches e arquivos temporarios do gerenciador."
     },
     {
@@ -1330,7 +1330,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "package_managers_pacman_pacmanpackagemanager",
-      "community": 4,
+      "community": 20,
       "norm_label": "pacmanpackagemanager"
     },
     {
@@ -1340,7 +1340,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "package_managers_pacman_pacmanpackagemanager_name",
-      "community": 4,
+      "community": 20,
       "norm_label": ".name()"
     },
     {
@@ -1350,7 +1350,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "package_managers_pacman_pacmanpackagemanager_is_available",
-      "community": 4,
+      "community": 20,
       "norm_label": ".is_available()"
     },
     {
@@ -1360,7 +1360,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "package_managers_pacman_pacmanpackagemanager_check_updates",
-      "community": 4,
+      "community": 20,
       "norm_label": ".check_updates()"
     },
     {
@@ -1370,7 +1370,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "sysdoctor_package_managers_pacman_py_any",
-      "community": 4,
+      "community": 20,
       "norm_label": "any"
     },
     {
@@ -1380,7 +1380,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "package_managers_pacman_pacmanpackagemanager_auto_fix",
-      "community": 4,
+      "community": 20,
       "norm_label": ".auto_fix()"
     },
     {
@@ -1390,7 +1390,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "package_managers_pacman_pacmanpackagemanager_clean_cache",
-      "community": 4,
+      "community": 20,
       "norm_label": ".clean_cache()"
     },
     {
@@ -1520,7 +1520,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_zypper",
-      "community": 4,
+      "community": 11,
       "norm_label": "zypper.py"
     },
     {
@@ -1530,7 +1530,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "package_managers_zypper_zypperpackagemanager",
-      "community": 4,
+      "community": 11,
       "norm_label": "zypperpackagemanager"
     },
     {
@@ -1540,7 +1540,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "package_managers_zypper_zypperpackagemanager_name",
-      "community": 4,
+      "community": 11,
       "norm_label": ".name()"
     },
     {
@@ -1550,7 +1550,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "package_managers_zypper_zypperpackagemanager_is_available",
-      "community": 4,
+      "community": 11,
       "norm_label": ".is_available()"
     },
     {
@@ -1560,7 +1560,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "package_managers_zypper_zypperpackagemanager_check_updates",
-      "community": 4,
+      "community": 11,
       "norm_label": ".check_updates()"
     },
     {
@@ -1570,7 +1570,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "sysdoctor_package_managers_zypper_py_any",
-      "community": 4,
+      "community": 11,
       "norm_label": "any"
     },
     {
@@ -1580,7 +1580,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "package_managers_zypper_zypperpackagemanager_auto_fix",
-      "community": 4,
+      "community": 11,
       "norm_label": ".auto_fix()"
     },
     {
@@ -1590,7 +1590,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "package_managers_zypper_zypperpackagemanager_clean_cache",
-      "community": 4,
+      "community": 11,
       "norm_label": ".clean_cache()"
     },
     {
@@ -1600,7 +1600,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_zypper_rationale_1",
-      "community": 4,
+      "community": 11,
       "norm_label": "gerenciador de pacotes zypper (opensuse)."
     },
     {
@@ -1950,7 +1950,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "utils_runner_run_command",
-      "community": 4,
+      "community": 10,
       "norm_label": "run_command()"
     },
     {
@@ -1980,7 +1980,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "utils_runner_rationale_25",
-      "community": 4,
+      "community": 10,
       "norm_label": "executa um comando de sistema e retorna (code, stdout, stderr)."
     },
     {
@@ -2342,6 +2342,266 @@
       "id": "reports_resumo_sessao_2026_08_21_status_atual",
       "community": 6,
       "norm_label": "\ud83d\udcca status atual"
+    },
+    {
+      "label": "RELATORIO-STATUS-2026-08-27.md",
+      "file_type": "document",
+      "source_file": "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "status_updates_relatorio_status_2026_08_27",
+      "community": 22,
+      "norm_label": "relatorio-status-2026-08-27.md"
+    },
+    {
+      "label": "Relat\u00f3rio de Atualiza\u00e7\u00e3o de Status: SysDoctor",
+      "file_type": "document",
+      "source_file": "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "status_updates_relatorio_status_2026_08_27_relat\u00f3rio_de_atualiza\u00e7\u00e3o_de_status_sysdoctor",
+      "community": 22,
+      "norm_label": "relatorio de atualizacao de status: sysdoctor"
+    },
+    {
+      "label": "1. Vers\u00e3o Ativa & Status Geral de Sa\u00fade",
+      "file_type": "document",
+      "source_file": "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "status_updates_relatorio_status_2026_08_27_1_vers\u00e3o_ativa_status_geral_de_sa\u00fade",
+      "community": 22,
+      "norm_label": "1. versao ativa & status geral de saude"
+    },
+    {
+      "label": "2. M\u00e9tricas do Smart Gate e Testes Automatizados",
+      "file_type": "document",
+      "source_file": "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "status_updates_relatorio_status_2026_08_27_2_m\u00e9tricas_do_smart_gate_e_testes_automatizados",
+      "community": 22,
+      "norm_label": "2. metricas do smart gate e testes automatizados"
+    },
+    {
+      "label": "3. Entregas Recentes e Arquivos Modificados",
+      "file_type": "document",
+      "source_file": "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "status_updates_relatorio_status_2026_08_27_3_entregas_recentes_e_arquivos_modificados",
+      "community": 22,
+      "norm_label": "3. entregas recentes e arquivos modificados"
+    },
+    {
+      "label": "4. Status dos Deploys e Ambientes",
+      "file_type": "document",
+      "source_file": "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "status_updates_relatorio_status_2026_08_27_4_status_dos_deploys_e_ambientes",
+      "community": 22,
+      "norm_label": "4. status dos deploys e ambientes"
+    },
+    {
+      "label": "5. Pr\u00f3ximos Passos do Roadmap",
+      "file_type": "document",
+      "source_file": "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md",
+      "source_location": "L59",
+      "_origin": "ast",
+      "id": "status_updates_relatorio_status_2026_08_27_5_pr\u00f3ximos_passos_do_roadmap",
+      "community": 22,
+      "norm_label": "5. proximos passos do roadmap"
+    },
+    {
+      "label": "ROADMAP-SYSDOCTOR.md",
+      "file_type": "document",
+      "source_file": "docs/roadmaps/ROADMAP-SYSDOCTOR.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "roadmaps_roadmap_sysdoctor",
+      "community": 21,
+      "norm_label": "roadmap-sysdoctor.md"
+    },
+    {
+      "label": "Roadmap do Projeto SysDoctor",
+      "file_type": "document",
+      "source_file": "docs/roadmaps/ROADMAP-SYSDOCTOR.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "roadmaps_roadmap_sysdoctor_roadmap_do_projeto_sysdoctor",
+      "community": 21,
+      "norm_label": "roadmap do projeto sysdoctor"
+    },
+    {
+      "label": "\ud83d\udccd Vers\u00e3o Ativa: v2.0.0 (Lan\u00e7ada / Est\u00e1vel)",
+      "file_type": "document",
+      "source_file": "docs/roadmaps/ROADMAP-SYSDOCTOR.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "roadmaps_roadmap_sysdoctor_vers\u00e3o_ativa_v2_0_0_lan\u00e7ada_est\u00e1vel",
+      "community": 21,
+      "norm_label": "\ud83d\udccd versao ativa: v2.0.0 (lancada / estavel)"
+    },
+    {
+      "label": "\ud83c\udfaf Pr\u00f3ximos Marcos (Milestones)",
+      "file_type": "document",
+      "source_file": "docs/roadmaps/ROADMAP-SYSDOCTOR.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "roadmaps_roadmap_sysdoctor_pr\u00f3ximos_marcos_milestones",
+      "community": 21,
+      "norm_label": "\ud83c\udfaf proximos marcos (milestones)"
+    },
+    {
+      "label": "\ud83d\udccc Milestone v2.1.0 \u2014 Diagn\u00f3stico Avan\u00e7ado de Redes e Containers",
+      "file_type": "document",
+      "source_file": "docs/roadmaps/ROADMAP-SYSDOCTOR.md",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "roadmaps_roadmap_sysdoctor_milestone_v2_1_0_diagn\u00f3stico_avan\u00e7ado_de_redes_e_containers",
+      "community": 21,
+      "norm_label": "\ud83d\udccc milestone v2.1.0 \u2014 diagnostico avancado de redes e containers"
+    },
+    {
+      "label": "\ud83d\udccc Milestone v2.2.0 \u2014 Integra\u00e7\u00e3o e Observabilidade",
+      "file_type": "document",
+      "source_file": "docs/roadmaps/ROADMAP-SYSDOCTOR.md",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "roadmaps_roadmap_sysdoctor_milestone_v2_2_0_integra\u00e7\u00e3o_e_observabilidade",
+      "community": 21,
+      "norm_label": "\ud83d\udccc milestone v2.2.0 \u2014 integracao e observabilidade"
+    },
+    {
+      "label": "\ud83d\udccc Milestone v2.3.0 \u2014 Interface Web Opcional e Hist\u00f3rico de M\u00e9tricas",
+      "file_type": "document",
+      "source_file": "docs/roadmaps/ROADMAP-SYSDOCTOR.md",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "roadmaps_roadmap_sysdoctor_milestone_v2_3_0_interface_web_opcional_e_hist\u00f3rico_de_m\u00e9tricas",
+      "community": 21,
+      "norm_label": "\ud83d\udccc milestone v2.3.0 \u2014 interface web opcional e historico de metricas"
+    },
+    {
+      "label": "SPEC-SYSDOCTOR-V2.md",
+      "file_type": "document",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_spec_sysdoctor_v2",
+      "community": 8,
+      "norm_label": "spec-sysdoctor-v2.md"
+    },
+    {
+      "label": "Especifica\u00e7\u00e3o T\u00e9cnica (SPEC): SysDoctor v2.0.0",
+      "file_type": "document",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "specs_spec_sysdoctor_v2_especifica\u00e7\u00e3o_t\u00e9cnica_spec_sysdoctor_v2_0_0",
+      "community": 8,
+      "norm_label": "especificacao tecnica (spec): sysdoctor v2.0.0"
+    },
+    {
+      "label": "1. Vis\u00e3o Geral e Arquitetura",
+      "file_type": "document",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "specs_spec_sysdoctor_v2_1_vis\u00e3o_geral_e_arquitetura",
+      "community": 8,
+      "norm_label": "1. visao geral e arquitetura"
+    },
+    {
+      "label": "Diagrama de Camadas da Arquitetura",
+      "file_type": "document",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "specs_spec_sysdoctor_v2_diagrama_de_camadas_da_arquitetura",
+      "community": 8,
+      "norm_label": "diagrama de camadas da arquitetura"
+    },
+    {
+      "label": "2. Componentes e M\u00f3dulos Principais",
+      "file_type": "document",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "specs_spec_sysdoctor_v2_2_componentes_e_m\u00f3dulos_principais",
+      "community": 8,
+      "norm_label": "2. componentes e modulos principais"
+    },
+    {
+      "label": "2.1 `sysdoctor.core`",
+      "file_type": "document",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "specs_spec_sysdoctor_v2_2_1_sysdoctor_core",
+      "community": 8,
+      "norm_label": "2.1 `sysdoctor.core`"
+    },
+    {
+      "label": "2.2 `sysdoctor.package_managers`",
+      "file_type": "document",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "specs_spec_sysdoctor_v2_2_2_sysdoctor_package_managers",
+      "community": 8,
+      "norm_label": "2.2 `sysdoctor.package_managers`"
+    },
+    {
+      "label": "2.3 `sysdoctor.ui`",
+      "file_type": "document",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "specs_spec_sysdoctor_v2_2_3_sysdoctor_ui",
+      "community": 8,
+      "norm_label": "2.3 `sysdoctor.ui`"
+    },
+    {
+      "label": "3. Interfaces de Execu\u00e7\u00e3o",
+      "file_type": "document",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L85",
+      "_origin": "ast",
+      "id": "specs_spec_sysdoctor_v2_3_interfaces_de_execu\u00e7\u00e3o",
+      "community": 8,
+      "norm_label": "3. interfaces de execucao"
+    },
+    {
+      "label": "3.1 CLI",
+      "file_type": "document",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "specs_spec_sysdoctor_v2_3_1_cli",
+      "community": 8,
+      "norm_label": "3.1 cli"
+    },
+    {
+      "label": "3.2 Integra\u00e7\u00e3o Systemd",
+      "file_type": "document",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "specs_spec_sysdoctor_v2_3_2_integra\u00e7\u00e3o_systemd",
+      "community": 8,
+      "norm_label": "3.2 integracao systemd"
+    },
+    {
+      "label": "4. Requisitos de Qualidade e Testes",
+      "file_type": "document",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L107",
+      "_origin": "ast",
+      "id": "specs_spec_sysdoctor_v2_4_requisitos_de_qualidade_e_testes",
+      "community": 8,
+      "norm_label": "4. requisitos de qualidade e testes"
     }
   ],
   "links": [
@@ -7180,9 +7440,9 @@
       "source_file": "docs/reports/RESUMO-SESSAO-2026-08-21.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_resumo_sessao_2026_08_21",
-      "target": "reports_resumo_sessao_2026_08_21_relat\u00f3rio_de_sess\u00e3o_atualiza\u00e7\u00e3o_e_sincroniza\u00e7\u00e3o_do_sysdoctor",
-      "confidence_score": 1.0
+      "target": "reports_resumo_sessao_2026_08_21_relat\u00f3rio_de_sess\u00e3o_atualiza\u00e7\u00e3o_e_sincroniza\u00e7\u00e3o_do_sysdoctor"
     },
     {
       "relation": "contains",
@@ -7190,9 +7450,9 @@
       "source_file": "docs/reports/RESUMO-SESSAO-2026-08-21.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_resumo_sessao_2026_08_21_relat\u00f3rio_de_sess\u00e3o_atualiza\u00e7\u00e3o_e_sincroniza\u00e7\u00e3o_do_sysdoctor",
-      "target": "reports_resumo_sessao_2026_08_21_a\u00e7\u00f5es_realizadas",
-      "confidence_score": 1.0
+      "target": "reports_resumo_sessao_2026_08_21_a\u00e7\u00f5es_realizadas"
     },
     {
       "relation": "contains",
@@ -7200,9 +7460,9 @@
       "source_file": "docs/reports/RESUMO-SESSAO-2026-08-21.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_resumo_sessao_2026_08_21_relat\u00f3rio_de_sess\u00e3o_atualiza\u00e7\u00e3o_e_sincroniza\u00e7\u00e3o_do_sysdoctor",
-      "target": "reports_resumo_sessao_2026_08_21_objetivo_da_sess\u00e3o",
-      "confidence_score": 1.0
+      "target": "reports_resumo_sessao_2026_08_21_objetivo_da_sess\u00e3o"
     },
     {
       "relation": "contains",
@@ -7210,11 +7470,241 @@
       "source_file": "docs/reports/RESUMO-SESSAO-2026-08-21.md",
       "source_location": "L37",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_resumo_sessao_2026_08_21_relat\u00f3rio_de_sess\u00e3o_atualiza\u00e7\u00e3o_e_sincroniza\u00e7\u00e3o_do_sysdoctor",
-      "target": "reports_resumo_sessao_2026_08_21_status_atual",
+      "target": "reports_resumo_sessao_2026_08_21_status_atual"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "status_updates_relatorio_status_2026_08_27",
+      "target": "status_updates_relatorio_status_2026_08_27_relat\u00f3rio_de_atualiza\u00e7\u00e3o_de_status_sysdoctor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "status_updates_relatorio_status_2026_08_27_relat\u00f3rio_de_atualiza\u00e7\u00e3o_de_status_sysdoctor",
+      "target": "status_updates_relatorio_status_2026_08_27_1_vers\u00e3o_ativa_status_geral_de_sa\u00fade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "status_updates_relatorio_status_2026_08_27_relat\u00f3rio_de_atualiza\u00e7\u00e3o_de_status_sysdoctor",
+      "target": "status_updates_relatorio_status_2026_08_27_2_m\u00e9tricas_do_smart_gate_e_testes_automatizados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "status_updates_relatorio_status_2026_08_27_relat\u00f3rio_de_atualiza\u00e7\u00e3o_de_status_sysdoctor",
+      "target": "status_updates_relatorio_status_2026_08_27_3_entregas_recentes_e_arquivos_modificados",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "status_updates_relatorio_status_2026_08_27_relat\u00f3rio_de_atualiza\u00e7\u00e3o_de_status_sysdoctor",
+      "target": "status_updates_relatorio_status_2026_08_27_4_status_dos_deploys_e_ambientes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "status_updates_relatorio_status_2026_08_27_relat\u00f3rio_de_atualiza\u00e7\u00e3o_de_status_sysdoctor",
+      "target": "status_updates_relatorio_status_2026_08_27_5_pr\u00f3ximos_passos_do_roadmap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/roadmaps/ROADMAP-SYSDOCTOR.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "roadmaps_roadmap_sysdoctor",
+      "target": "roadmaps_roadmap_sysdoctor_roadmap_do_projeto_sysdoctor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/roadmaps/ROADMAP-SYSDOCTOR.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "roadmaps_roadmap_sysdoctor_roadmap_do_projeto_sysdoctor",
+      "target": "roadmaps_roadmap_sysdoctor_pr\u00f3ximos_marcos_milestones",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/roadmaps/ROADMAP-SYSDOCTOR.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "roadmaps_roadmap_sysdoctor_roadmap_do_projeto_sysdoctor",
+      "target": "roadmaps_roadmap_sysdoctor_vers\u00e3o_ativa_v2_0_0_lan\u00e7ada_est\u00e1vel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/roadmaps/ROADMAP-SYSDOCTOR.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "roadmaps_roadmap_sysdoctor_pr\u00f3ximos_marcos_milestones",
+      "target": "roadmaps_roadmap_sysdoctor_milestone_v2_1_0_diagn\u00f3stico_avan\u00e7ado_de_redes_e_containers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/roadmaps/ROADMAP-SYSDOCTOR.md",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "roadmaps_roadmap_sysdoctor_pr\u00f3ximos_marcos_milestones",
+      "target": "roadmaps_roadmap_sysdoctor_milestone_v2_2_0_integra\u00e7\u00e3o_e_observabilidade",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/roadmaps/ROADMAP-SYSDOCTOR.md",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "roadmaps_roadmap_sysdoctor_pr\u00f3ximos_marcos_milestones",
+      "target": "roadmaps_roadmap_sysdoctor_milestone_v2_3_0_interface_web_opcional_e_hist\u00f3rico_de_m\u00e9tricas",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "specs_spec_sysdoctor_v2",
+      "target": "specs_spec_sysdoctor_v2_especifica\u00e7\u00e3o_t\u00e9cnica_spec_sysdoctor_v2_0_0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "specs_spec_sysdoctor_v2_especifica\u00e7\u00e3o_t\u00e9cnica_spec_sysdoctor_v2_0_0",
+      "target": "specs_spec_sysdoctor_v2_1_vis\u00e3o_geral_e_arquitetura",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "specs_spec_sysdoctor_v2_especifica\u00e7\u00e3o_t\u00e9cnica_spec_sysdoctor_v2_0_0",
+      "target": "specs_spec_sysdoctor_v2_2_componentes_e_m\u00f3dulos_principais",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L85",
+      "weight": 1.0,
+      "source": "specs_spec_sysdoctor_v2_especifica\u00e7\u00e3o_t\u00e9cnica_spec_sysdoctor_v2_0_0",
+      "target": "specs_spec_sysdoctor_v2_3_interfaces_de_execu\u00e7\u00e3o",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "specs_spec_sysdoctor_v2_especifica\u00e7\u00e3o_t\u00e9cnica_spec_sysdoctor_v2_0_0",
+      "target": "specs_spec_sysdoctor_v2_4_requisitos_de_qualidade_e_testes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "specs_spec_sysdoctor_v2_1_vis\u00e3o_geral_e_arquitetura",
+      "target": "specs_spec_sysdoctor_v2_diagrama_de_camadas_da_arquitetura",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "specs_spec_sysdoctor_v2_2_componentes_e_m\u00f3dulos_principais",
+      "target": "specs_spec_sysdoctor_v2_2_1_sysdoctor_core",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "specs_spec_sysdoctor_v2_2_componentes_e_m\u00f3dulos_principais",
+      "target": "specs_spec_sysdoctor_v2_2_2_sysdoctor_package_managers",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "specs_spec_sysdoctor_v2_2_componentes_e_m\u00f3dulos_principais",
+      "target": "specs_spec_sysdoctor_v2_2_3_sysdoctor_ui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "specs_spec_sysdoctor_v2_3_interfaces_de_execu\u00e7\u00e3o",
+      "target": "specs_spec_sysdoctor_v2_3_1_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/specs/SPEC-SYSDOCTOR-V2.md",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "specs_spec_sysdoctor_v2_3_interfaces_de_execu\u00e7\u00e3o",
+      "target": "specs_spec_sysdoctor_v2_3_2_integra\u00e7\u00e3o_systemd",
       "confidence_score": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "3191abfe2ecb2e5e2a27a9929d2d35efa2f20b9f"
+  "built_at_commit": "fe59468ea4e508807e150505d3a198d0ce781707"
 }

@@ -163,5 +163,20 @@
     "mtime": 1787355810.3924627,
     "ast_hash": "2e8b57243a97b892b7a05e9408280ab3",
     "semantic_hash": ""
+  },
+  "docs/reports/status-updates/RELATORIO-STATUS-2026-08-27.md": {
+    "mtime": 1787837323.4708543,
+    "ast_hash": "14e0a30c3a27b5ad981fab8f72970bed",
+    "semantic_hash": ""
+  },
+  "docs/roadmaps/ROADMAP-SYSDOCTOR.md": {
+    "mtime": 1787837305.1238704,
+    "ast_hash": "ffb17068ba3c255ab7eb7651af06b7a9",
+    "semantic_hash": ""
+  },
+  "docs/specs/SPEC-SYSDOCTOR-V2.md": {
+    "mtime": 1787837295.8129792,
+    "ast_hash": "aa57e7fd405e7fafa7f78fef90d5318c",
+    "semantic_hash": ""
   }
 }
