@@ -22,6 +22,9 @@ class TestDashboard(unittest.TestCase):
     def test_generate_dashboard_grid(self):
         grid = generate_dashboard_grid()
         self.assertIsInstance(grid, Layout)
+        self.assertIsNotNone(grid.get("header"))
+        self.assertIsNotNone(grid.get("main"))
+        self.assertIsNotNone(grid.get("footer"))
 
 
 if __name__ == "__main__":

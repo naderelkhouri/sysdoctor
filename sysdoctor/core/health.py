@@ -84,7 +84,32 @@ def evaluate_health(
             )
         )
 
-    # 3. Discos
+    # 3. Memória Swap
+    if metrics.swap_total_bytes > 0:
+        if metrics.swap_percent > 90:
+            score -= 10
+            items.append(
+                DiagnosticItem(
+                    category="Swap",
+                    severity="CRITICAL",
+                    title="Memória Swap Quase Esgotada",
+                    message=f"Uso de Swap crítico: {metrics.swap_percent:.1f}%",
+                    action_suggestion="Considere encerrar processos pesados ou reciclar o swap (swapoff/swapon).",
+                )
+            )
+        elif metrics.swap_percent > 80:
+            score -= 5
+            items.append(
+                DiagnosticItem(
+                    category="Swap",
+                    severity="WARNING",
+                    title="Uso Elevado de Memória Swap",
+                    message=f"Uso de Swap elevado: {metrics.swap_percent:.1f}%",
+                    action_suggestion="Monitore os processos em execução e o uso de memória virtual.",
+                )
+            )
+
+    # 4. Discos
     for disk in metrics.disks:
         if disk.percent > 90:
             score -= 15

@@ -1,10 +1,21 @@
-"""
-Módulo de limpeza profunda e auto-correção do sistema.
-"""
-
+import os
+import pwd
+import shutil
+from pathlib import Path
 from typing import List, Tuple
 from sysdoctor.package_managers import get_available_package_managers
 from sysdoctor.utils.runner import command_exists, run_command
+
+
+def get_target_user_home() -> Path:
+    """Retorna o diretório home do usuário real (mesmo se executado com sudo)."""
+    sudo_user = os.environ.get("SUDO_USER")
+    if sudo_user:
+        try:
+            return Path(pwd.getpwnam(sudo_user).pw_dir)
+        except Exception:
+            pass
+    return Path.home()
 
 
 class SystemCleaner:
@@ -24,12 +35,66 @@ class SystemCleaner:
         return False, f"Falha ao truncar logs: {err}"
 
     def clean_user_caches(self) -> Tuple[bool, str]:
-        """Limpa miniaturas e caches temporários no ambiente do usuário (se aplicável)."""
-        # Limpeza simples de cache de miniaturas (thumbnails)
-        code, out, _ = run_command(
-            ["rm", "-rf", "~/.cache/thumbnails/*"], dry_run=self.dry_run, timeout=30
-        )
-        return True, "Caches de miniaturas limpos."
+        """Limpa miniaturas e caches temporários no ambiente do usuário."""
+        home = get_target_user_home()
+        thumbnails_dir = home / ".cache" / "thumbnails"
+
+        if not thumbnails_dir.exists():
+            return True, "Nenhum cache de miniaturas encontrado."
+
+        if self.dry_run:
+            return True, f"[DRY-RUN] Miniaturas em {thumbnails_dir} seriam limpas."
+
+        try:
+            cleaned = 0
+            for item in thumbnails_dir.iterdir():
+                if item.is_dir():
+                    shutil.rmtree(item, ignore_errors=True)
+                    cleaned += 1
+                elif item.is_file():
+                    item.unlink(missing_ok=True)
+                    cleaned += 1
+            return True, f"Cache de miniaturas limpo ({cleaned} itens removidos)."
+        except Exception as e:
+            return False, f"Falha ao limpar miniaturas: {e}"
+
+    def clean_dev_caches(self) -> Tuple[bool, str]:
+        """
+        Limpa caches de ferramentas de desenvolvimento comuns (uv, pip, npm),
+        que costumam ser grandes responsáveis pelo esgotamento de disco.
+        """
+        cleaned_tools = []
+        sudo_user = os.environ.get("SUDO_USER")
+
+        def run_tool(cmd_list: List[str]) -> Tuple[int, str, str]:
+            if sudo_user and os.geteuid() == 0 and command_exists("sudo"):
+                cmd_to_run = ["sudo", "-u", sudo_user] + cmd_list
+            else:
+                cmd_to_run = cmd_list
+            return run_command(cmd_to_run, dry_run=self.dry_run, timeout=60)
+
+        # 1. uv cache clean
+        if command_exists("uv"):
+            code, _, _ = run_tool(["uv", "cache", "clean"])
+            if code == 0:
+                cleaned_tools.append("uv")
+
+        # 2. pip / pip3 cache purge
+        pip_cmd = "pip" if command_exists("pip") else ("pip3" if command_exists("pip3") else None)
+        if pip_cmd:
+            code, _, _ = run_tool([pip_cmd, "cache", "purge"])
+            if code == 0:
+                cleaned_tools.append(pip_cmd)
+
+        # 3. npm cache clean --force
+        if command_exists("npm"):
+            code, _, _ = run_tool(["npm", "cache", "clean", "--force"])
+            if code == 0:
+                cleaned_tools.append("npm")
+
+        if cleaned_tools:
+            return True, f"Caches de desenvolvimento limpos com sucesso ({', '.join(cleaned_tools)})."
+        return True, "Nenhuma ferramenta de desenvolvimento ativa com cache para limpar."
 
     def run_full_autofix(self) -> List[Tuple[str, bool, str]]:
         """
@@ -51,5 +116,9 @@ class SystemCleaner:
         # 3. User Cache
         succ_c, msg_c = self.clean_user_caches()
         results.append(("Cache de Miniaturas", succ_c, msg_c))
+
+        # 4. Dev Caches (uv, pip, npm)
+        succ_d, msg_d = self.clean_dev_caches()
+        results.append(("Caches de Desenvolvimento", succ_d, msg_d))
 
         return results
