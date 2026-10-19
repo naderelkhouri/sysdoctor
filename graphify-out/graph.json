@@ -370,97 +370,137 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "core_cleaner",
-      "community": 3,
+      "community": 11,
       "norm_label": "cleaner.py"
+    },
+    {
+      "label": "get_target_user_home()",
+      "file_type": "code",
+      "source_file": "sysdoctor/core/cleaner.py",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "core_cleaner_get_target_user_home",
+      "community": 11,
+      "norm_label": "get_target_user_home()"
+    },
+    {
+      "label": "Path",
+      "file_type": "code",
+      "source_file": "sysdoctor/core/cleaner.py",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "path",
+      "community": 0,
+      "norm_label": "path"
     },
     {
       "label": "SystemCleaner",
       "file_type": "code",
       "source_file": "sysdoctor/core/cleaner.py",
-      "source_location": "L10",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "core_cleaner_systemcleaner",
-      "community": 0,
+      "community": 11,
       "norm_label": "systemcleaner"
     },
     {
       "label": ".__init__()",
       "file_type": "code",
       "source_file": "sysdoctor/core/cleaner.py",
-      "source_location": "L11",
+      "source_location": "L22",
       "_origin": "ast",
       "id": "core_cleaner_systemcleaner_init",
-      "community": 0,
+      "community": 11,
       "norm_label": ".__init__()"
     },
     {
       "label": ".vacuum_journal_logs()",
       "file_type": "code",
       "source_file": "sysdoctor/core/cleaner.py",
-      "source_location": "L14",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "core_cleaner_systemcleaner_vacuum_journal_logs",
-      "community": 0,
+      "community": 11,
       "norm_label": ".vacuum_journal_logs()"
     },
     {
       "label": ".clean_user_caches()",
       "file_type": "code",
       "source_file": "sysdoctor/core/cleaner.py",
-      "source_location": "L26",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "core_cleaner_systemcleaner_clean_user_caches",
-      "community": 0,
+      "community": 11,
       "norm_label": ".clean_user_caches()"
+    },
+    {
+      "label": ".clean_dev_caches()",
+      "file_type": "code",
+      "source_file": "sysdoctor/core/cleaner.py",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "core_cleaner_systemcleaner_clean_dev_caches",
+      "community": 11,
+      "norm_label": ".clean_dev_caches()"
     },
     {
       "label": ".run_full_autofix()",
       "file_type": "code",
       "source_file": "sysdoctor/core/cleaner.py",
-      "source_location": "L34",
+      "source_location": "L99",
       "_origin": "ast",
       "id": "core_cleaner_systemcleaner_run_full_autofix",
-      "community": 0,
+      "community": 11,
       "norm_label": ".run_full_autofix()"
     },
     {
-      "label": "M\u00f3dulo de limpeza profunda e auto-corre\u00e7\u00e3o do sistema.",
+      "label": "Retorna o diret\u00f3rio home do usu\u00e1rio real (mesmo se executado com sudo).",
       "file_type": "rationale",
       "source_file": "sysdoctor/core/cleaner.py",
-      "source_location": "L1",
+      "source_location": "L11",
       "_origin": "ast",
-      "id": "core_cleaner_rationale_1",
-      "community": 3,
-      "norm_label": "modulo de limpeza profunda e auto-correcao do sistema."
+      "id": "core_cleaner_rationale_11",
+      "community": 11,
+      "norm_label": "retorna o diretorio home do usuario real (mesmo se executado com sudo)."
     },
     {
       "label": "Reduz o tamanho dos logs do systemd journald.",
       "file_type": "rationale",
       "source_file": "sysdoctor/core/cleaner.py",
-      "source_location": "L15",
+      "source_location": "L26",
       "_origin": "ast",
-      "id": "core_cleaner_rationale_15",
-      "community": 0,
+      "id": "core_cleaner_rationale_26",
+      "community": 11,
       "norm_label": "reduz o tamanho dos logs do systemd journald."
     },
     {
-      "label": "Limpa miniaturas e caches tempor\u00e1rios no ambiente do usu\u00e1rio (se aplic\u00e1vel).",
+      "label": "Limpa miniaturas e caches tempor\u00e1rios no ambiente do usu\u00e1rio.",
       "file_type": "rationale",
       "source_file": "sysdoctor/core/cleaner.py",
-      "source_location": "L27",
+      "source_location": "L38",
       "_origin": "ast",
-      "id": "core_cleaner_rationale_27",
-      "community": 0,
-      "norm_label": "limpa miniaturas e caches temporarios no ambiente do usuario (se aplicavel)."
+      "id": "core_cleaner_rationale_38",
+      "community": 11,
+      "norm_label": "limpa miniaturas e caches temporarios no ambiente do usuario."
+    },
+    {
+      "label": "Limpa caches de ferramentas de desenvolvimento comuns (uv, pip, npm),         qu",
+      "file_type": "rationale",
+      "source_file": "sysdoctor/core/cleaner.py",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "core_cleaner_rationale_62",
+      "community": 11,
+      "norm_label": "limpa caches de ferramentas de desenvolvimento comuns (uv, pip, npm),         qu"
     },
     {
       "label": "Executa auto-corre\u00e7\u00e3o em todos os gerenciadores de pacotes e no sistema.",
       "file_type": "rationale",
       "source_file": "sysdoctor/core/cleaner.py",
-      "source_location": "L35",
+      "source_location": "L100",
       "_origin": "ast",
-      "id": "core_cleaner_rationale_35",
-      "community": 0,
+      "id": "core_cleaner_rationale_100",
+      "community": 11,
       "norm_label": "executa auto-correcao em todos os gerenciadores de pacotes e no sistema."
     },
     {
@@ -750,7 +790,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "package_managers_init_get_available_package_managers",
-      "community": 3,
+      "community": 9,
       "norm_label": "get_available_package_managers()"
     },
     {
@@ -760,7 +800,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "sysdoctor_package_managers_init_py_basepackagemanager",
-      "community": 3,
+      "community": 9,
       "norm_label": "basepackagemanager"
     },
     {
@@ -780,7 +820,7 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "package_managers_init_rationale_17",
-      "community": 3,
+      "community": 9,
       "norm_label": "retorna lista com todas as instancias de gerenciadores disponiveis no sistema."
     },
     {
@@ -790,7 +830,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_apk",
-      "community": 4,
+      "community": 12,
       "norm_label": "apk.py"
     },
     {
@@ -800,7 +840,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "package_managers_apk_apkpackagemanager",
-      "community": 4,
+      "community": 12,
       "norm_label": "apkpackagemanager"
     },
     {
@@ -810,7 +850,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "basepackagemanager",
-      "community": 4,
+      "community": 10,
       "norm_label": "basepackagemanager"
     },
     {
@@ -820,7 +860,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "package_managers_apk_apkpackagemanager_name",
-      "community": 4,
+      "community": 12,
       "norm_label": ".name()"
     },
     {
@@ -830,7 +870,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "package_managers_apk_apkpackagemanager_is_available",
-      "community": 4,
+      "community": 12,
       "norm_label": ".is_available()"
     },
     {
@@ -840,7 +880,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "package_managers_apk_apkpackagemanager_check_updates",
-      "community": 4,
+      "community": 12,
       "norm_label": ".check_updates()"
     },
     {
@@ -850,7 +890,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "sysdoctor_package_managers_apk_py_any",
-      "community": 4,
+      "community": 12,
       "norm_label": "any"
     },
     {
@@ -860,7 +900,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "package_managers_apk_apkpackagemanager_auto_fix",
-      "community": 4,
+      "community": 12,
       "norm_label": ".auto_fix()"
     },
     {
@@ -870,7 +910,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "package_managers_apk_apkpackagemanager_clean_cache",
-      "community": 4,
+      "community": 12,
       "norm_label": ".clean_cache()"
     },
     {
@@ -880,7 +920,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_apk_rationale_1",
-      "community": 4,
+      "community": 12,
       "norm_label": "gerenciador de pacotes apk (alpine linux)."
     },
     {
@@ -890,7 +930,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_apt",
-      "community": 4,
+      "community": 20,
       "norm_label": "apt.py"
     },
     {
@@ -900,67 +940,87 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "package_managers_apt_aptpackagemanager",
-      "community": 4,
+      "community": 13,
       "norm_label": "aptpackagemanager"
     },
     {
       "label": ".name()",
       "file_type": "code",
       "source_file": "sysdoctor/package_managers/apt.py",
-      "source_location": "L13",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "package_managers_apt_aptpackagemanager_name",
-      "community": 4,
+      "community": 13,
       "norm_label": ".name()"
     },
     {
       "label": ".is_available()",
       "file_type": "code",
       "source_file": "sysdoctor/package_managers/apt.py",
-      "source_location": "L16",
+      "source_location": "L27",
       "_origin": "ast",
       "id": "package_managers_apt_aptpackagemanager_is_available",
-      "community": 4,
+      "community": 13,
       "norm_label": ".is_available()"
+    },
+    {
+      "label": ".get_residual_packages()",
+      "file_type": "code",
+      "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "package_managers_apt_aptpackagemanager_get_residual_packages",
+      "community": 13,
+      "norm_label": ".get_residual_packages()"
+    },
+    {
+      "label": ".clean_residual_packages()",
+      "file_type": "code",
+      "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "package_managers_apt_aptpackagemanager_clean_residual_packages",
+      "community": 13,
+      "norm_label": ".clean_residual_packages()"
     },
     {
       "label": ".check_updates()",
       "file_type": "code",
       "source_file": "sysdoctor/package_managers/apt.py",
-      "source_location": "L19",
+      "source_location": "L78",
       "_origin": "ast",
       "id": "package_managers_apt_aptpackagemanager_check_updates",
-      "community": 4,
+      "community": 13,
       "norm_label": ".check_updates()"
     },
     {
       "label": "Any",
       "file_type": "code",
       "source_file": "sysdoctor/package_managers/apt.py",
-      "source_location": "L19",
+      "source_location": "L78",
       "_origin": "ast",
       "id": "sysdoctor_package_managers_apt_py_any",
-      "community": 4,
+      "community": 13,
       "norm_label": "any"
     },
     {
       "label": ".auto_fix()",
       "file_type": "code",
       "source_file": "sysdoctor/package_managers/apt.py",
-      "source_location": "L47",
+      "source_location": "L106",
       "_origin": "ast",
       "id": "package_managers_apt_aptpackagemanager_auto_fix",
-      "community": 4,
+      "community": 13,
       "norm_label": ".auto_fix()"
     },
     {
       "label": ".clean_cache()",
       "file_type": "code",
       "source_file": "sysdoctor/package_managers/apt.py",
-      "source_location": "L70",
+      "source_location": "L136",
       "_origin": "ast",
       "id": "package_managers_apt_aptpackagemanager_clean_cache",
-      "community": 4,
+      "community": 13,
       "norm_label": ".clean_cache()"
     },
     {
@@ -970,8 +1030,28 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_apt_rationale_1",
-      "community": 4,
+      "community": 20,
       "norm_label": "gerenciador de pacotes apt (debian, ubuntu, mint, pop!_os, etc.)."
+    },
+    {
+      "label": "Retorna a lista de pacotes com status 'rc' (removidos mas com configs residuais)",
+      "file_type": "rationale",
+      "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "package_managers_apt_rationale_31",
+      "community": 13,
+      "norm_label": "retorna a lista de pacotes com status 'rc' (removidos mas com configs residuais)"
+    },
+    {
+      "label": "Remove com seguran\u00e7a pacotes em estado 'rc' (configura\u00e7\u00f5es residuais),         f",
+      "file_type": "rationale",
+      "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "package_managers_apt_rationale_47",
+      "community": 13,
+      "norm_label": "remove com seguranca pacotes em estado 'rc' (configuracoes residuais),         f"
     },
     {
       "label": "base.py",
@@ -1030,7 +1110,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "package_managers_base_basepackagemanager_check_updates",
-      "community": 4,
+      "community": 25,
       "norm_label": ".check_updates()"
     },
     {
@@ -1040,7 +1120,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "sysdoctor_package_managers_base_py_any",
-      "community": 4,
+      "community": 25,
       "norm_label": "any"
     },
     {
@@ -1100,7 +1180,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "package_managers_base_rationale_23",
-      "community": 4,
+      "community": 25,
       "norm_label": "retorna informacoes sobre atualizacoes disponiveis:         {             \"total"
     },
     {
@@ -1230,7 +1310,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_flatpak",
-      "community": 4,
+      "community": 20,
       "norm_label": "flatpak.py"
     },
     {
@@ -1310,7 +1390,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_flatpak_rationale_1",
-      "community": 4,
+      "community": 20,
       "norm_label": "gerenciador de pacotes flatpak."
     },
     {
@@ -1330,7 +1410,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "package_managers_pacman_pacmanpackagemanager",
-      "community": 4,
+      "community": 23,
       "norm_label": "pacmanpackagemanager"
     },
     {
@@ -1340,7 +1420,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "package_managers_pacman_pacmanpackagemanager_name",
-      "community": 4,
+      "community": 23,
       "norm_label": ".name()"
     },
     {
@@ -1350,7 +1430,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "package_managers_pacman_pacmanpackagemanager_is_available",
-      "community": 4,
+      "community": 23,
       "norm_label": ".is_available()"
     },
     {
@@ -1360,7 +1440,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "package_managers_pacman_pacmanpackagemanager_check_updates",
-      "community": 4,
+      "community": 23,
       "norm_label": ".check_updates()"
     },
     {
@@ -1370,7 +1450,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "sysdoctor_package_managers_pacman_py_any",
-      "community": 4,
+      "community": 23,
       "norm_label": "any"
     },
     {
@@ -1380,7 +1460,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "package_managers_pacman_pacmanpackagemanager_auto_fix",
-      "community": 4,
+      "community": 23,
       "norm_label": ".auto_fix()"
     },
     {
@@ -1390,7 +1470,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "package_managers_pacman_pacmanpackagemanager_clean_cache",
-      "community": 4,
+      "community": 23,
       "norm_label": ".clean_cache()"
     },
     {
@@ -1520,7 +1600,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_zypper",
-      "community": 4,
+      "community": 14,
       "norm_label": "zypper.py"
     },
     {
@@ -1530,7 +1610,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "package_managers_zypper_zypperpackagemanager",
-      "community": 4,
+      "community": 14,
       "norm_label": "zypperpackagemanager"
     },
     {
@@ -1540,7 +1620,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "package_managers_zypper_zypperpackagemanager_name",
-      "community": 4,
+      "community": 14,
       "norm_label": ".name()"
     },
     {
@@ -1550,7 +1630,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "package_managers_zypper_zypperpackagemanager_is_available",
-      "community": 4,
+      "community": 14,
       "norm_label": ".is_available()"
     },
     {
@@ -1560,7 +1640,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "package_managers_zypper_zypperpackagemanager_check_updates",
-      "community": 4,
+      "community": 14,
       "norm_label": ".check_updates()"
     },
     {
@@ -1570,7 +1650,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "sysdoctor_package_managers_zypper_py_any",
-      "community": 4,
+      "community": 14,
       "norm_label": "any"
     },
     {
@@ -1580,7 +1660,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "package_managers_zypper_zypperpackagemanager_auto_fix",
-      "community": 4,
+      "community": 14,
       "norm_label": ".auto_fix()"
     },
     {
@@ -1590,7 +1670,7 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "package_managers_zypper_zypperpackagemanager_clean_cache",
-      "community": 4,
+      "community": 14,
       "norm_label": ".clean_cache()"
     },
     {
@@ -1600,7 +1680,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "package_managers_zypper_rationale_1",
-      "community": 4,
+      "community": 14,
       "norm_label": "gerenciador de pacotes zypper (opensuse)."
     },
     {
@@ -1930,7 +2010,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "utils_runner",
-      "community": 4,
+      "community": 20,
       "norm_label": "runner.py"
     },
     {
@@ -1940,7 +2020,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "utils_runner_command_exists",
-      "community": 4,
+      "community": 20,
       "norm_label": "command_exists()"
     },
     {
@@ -1950,7 +2030,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "utils_runner_run_command",
-      "community": 4,
+      "community": 12,
       "norm_label": "run_command()"
     },
     {
@@ -1960,7 +2040,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "utils_runner_rationale_1",
-      "community": 4,
+      "community": 20,
       "norm_label": "modulo de execucao segura de subprocessos."
     },
     {
@@ -1970,7 +2050,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "utils_runner_rationale_14",
-      "community": 4,
+      "community": 20,
       "norm_label": "verifica se um comando cli esta disponivel no path."
     },
     {
@@ -1980,7 +2060,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "utils_runner_rationale_25",
-      "community": 4,
+      "community": 12,
       "norm_label": "executa um comando de sistema e retorna (code, stdout, stderr)."
     },
     {
@@ -2002,6 +2082,146 @@
       "id": "tests_init_rationale_1",
       "community": 17,
       "norm_label": "suite de testes unitarios para o sysdoctor."
+    },
+    {
+      "label": "test_apt.py",
+      "file_type": "code",
+      "source_file": "tests/test_apt.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_apt",
+      "community": 24,
+      "norm_label": "test_apt.py"
+    },
+    {
+      "label": "TestAptPackageManager",
+      "file_type": "code",
+      "source_file": "tests/test_apt.py",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "tests_test_apt_testaptpackagemanager",
+      "community": 24,
+      "norm_label": "testaptpackagemanager"
+    },
+    {
+      "label": ".setUp()",
+      "file_type": "code",
+      "source_file": "tests/test_apt.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "tests_test_apt_testaptpackagemanager_setup",
+      "community": 24,
+      "norm_label": ".setup()"
+    },
+    {
+      "label": ".test_get_residual_packages()",
+      "file_type": "code",
+      "source_file": "tests/test_apt.py",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "tests_test_apt_testaptpackagemanager_test_get_residual_packages",
+      "community": 24,
+      "norm_label": ".test_get_residual_packages()"
+    },
+    {
+      "label": ".test_clean_residual_packages_protects_grub_and_kernel()",
+      "file_type": "code",
+      "source_file": "tests/test_apt.py",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "tests_test_apt_testaptpackagemanager_test_clean_residual_packages_protects_grub_and_kernel",
+      "community": 24,
+      "norm_label": ".test_clean_residual_packages_protects_grub_and_kernel()"
+    },
+    {
+      "label": "Testes para o gerenciador de pacotes APT e prote\u00e7\u00e3o contra remo\u00e7\u00e3o de bootloader",
+      "file_type": "rationale",
+      "source_file": "tests/test_apt.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_apt_rationale_1",
+      "community": 24,
+      "norm_label": "testes para o gerenciador de pacotes apt e protecao contra remocao de bootloader"
+    },
+    {
+      "label": "test_cleaner.py",
+      "file_type": "code",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_cleaner",
+      "community": 11,
+      "norm_label": "test_cleaner.py"
+    },
+    {
+      "label": "TestSystemCleaner",
+      "file_type": "code",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "tests_test_cleaner_testsystemcleaner",
+      "community": 11,
+      "norm_label": "testsystemcleaner"
+    },
+    {
+      "label": ".setUp()",
+      "file_type": "code",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "tests_test_cleaner_testsystemcleaner_setup",
+      "community": 11,
+      "norm_label": ".setup()"
+    },
+    {
+      "label": ".test_get_target_user_home_default()",
+      "file_type": "code",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "tests_test_cleaner_testsystemcleaner_test_get_target_user_home_default",
+      "community": 11,
+      "norm_label": ".test_get_target_user_home_default()"
+    },
+    {
+      "label": ".test_vacuum_journal_logs_success()",
+      "file_type": "code",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "tests_test_cleaner_testsystemcleaner_test_vacuum_journal_logs_success",
+      "community": 11,
+      "norm_label": ".test_vacuum_journal_logs_success()"
+    },
+    {
+      "label": ".test_clean_dev_caches_dry_run()",
+      "file_type": "code",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "tests_test_cleaner_testsystemcleaner_test_clean_dev_caches_dry_run",
+      "community": 11,
+      "norm_label": ".test_clean_dev_caches_dry_run()"
+    },
+    {
+      "label": ".test_clean_user_caches_dry_run()",
+      "file_type": "code",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "tests_test_cleaner_testsystemcleaner_test_clean_user_caches_dry_run",
+      "community": 11,
+      "norm_label": ".test_clean_user_caches_dry_run()"
+    },
+    {
+      "label": "Testes para o m\u00f3dulo SystemCleaner e limpezas avan\u00e7adas de caches.",
+      "file_type": "rationale",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_cleaner_rationale_1",
+      "community": 11,
+      "norm_label": "testes para o modulo systemcleaner e limpezas avancadas de caches."
     },
     {
       "label": "test_dashboard.py",
@@ -2120,7 +2340,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_package_managers",
-      "community": 3,
+      "community": 9,
       "norm_label": "test_package_managers.py"
     },
     {
@@ -2130,7 +2350,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "tests_test_package_managers_testpackagemanagers",
-      "community": 3,
+      "community": 9,
       "norm_label": "testpackagemanagers"
     },
     {
@@ -2140,7 +2360,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "tests_test_package_managers_testpackagemanagers_test_get_available_package_managers",
-      "community": 3,
+      "community": 9,
       "norm_label": ".test_get_available_package_managers()"
     },
     {
@@ -2150,7 +2370,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_package_managers_rationale_1",
-      "community": 3,
+      "community": 9,
       "norm_label": "testes para deteccao e iterabilidade de gerenciadores de pacotes."
     },
     {
@@ -3686,6 +3906,16 @@
       "source_file": "sysdoctor/core/cleaner.py",
       "source_location": "L10",
       "weight": 1.0,
+      "source": "core_cleaner",
+      "target": "core_cleaner_get_target_user_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "sysdoctor/core/cleaner.py",
+      "source_location": "L10",
+      "weight": 1.0,
       "confidence_score": 1.0,
       "source": "core_cleaner",
       "target": "core_cleaner_systemcleaner"
@@ -3724,14 +3954,79 @@
       "target": "utils_runner_run_command"
     },
     {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "sysdoctor/core/cleaner.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "core_cleaner_get_target_user_home",
+      "target": "path",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "sysdoctor/core/cleaner.py",
-      "source_location": "L1",
+      "source_location": "L11",
       "weight": 1.0,
+      "source": "core_cleaner_rationale_11",
+      "target": "core_cleaner_get_target_user_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sysdoctor/core/cleaner.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "core_cleaner_systemcleaner_clean_user_caches",
+      "target": "core_cleaner_get_target_user_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tests_test_cleaner",
+      "target": "core_cleaner_get_target_user_home",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source": "core_cleaner_rationale_1",
-      "target": "core_cleaner"
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tests_test_cleaner_testsystemcleaner_test_get_target_user_home_default",
+      "target": "core_cleaner_get_target_user_home"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "sysdoctor/utils/logger.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "utils_logger_setup_logger",
+      "target": "path"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "sysdoctor/core/cleaner.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "core_cleaner_systemcleaner",
+      "target": "core_cleaner_systemcleaner_clean_dev_caches",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -3774,14 +4069,57 @@
       "target": "core_cleaner_systemcleaner_vacuum_journal_logs"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tests_test_cleaner",
+      "target": "core_cleaner_systemcleaner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L8",
+      "weight": 0.8,
+      "source": "tests_test_cleaner_testsystemcleaner",
+      "target": "core_cleaner_systemcleaner",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tests_test_cleaner_testsystemcleaner_setup",
+      "target": "core_cleaner_systemcleaner"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "tests_test_cleaner_testsystemcleaner_test_vacuum_journal_logs_success",
+      "target": "core_cleaner_systemcleaner"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "sysdoctor/core/cleaner.py",
-      "source_location": "L15",
+      "source_location": "L26",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_cleaner_rationale_15",
-      "target": "core_cleaner_systemcleaner_vacuum_journal_logs"
+      "source": "core_cleaner_rationale_26",
+      "target": "core_cleaner_systemcleaner_vacuum_journal_logs",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3820,11 +4158,11 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "sysdoctor/core/cleaner.py",
-      "source_location": "L27",
+      "source_location": "L38",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "core_cleaner_rationale_27",
-      "target": "core_cleaner_systemcleaner_clean_user_caches"
+      "source": "core_cleaner_rationale_38",
+      "target": "core_cleaner_systemcleaner_clean_user_caches",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -3852,11 +4190,43 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "sysdoctor/core/cleaner.py",
-      "source_location": "L35",
+      "source_location": "L62",
       "weight": 1.0,
+      "source": "core_cleaner_rationale_62",
+      "target": "core_cleaner_systemcleaner_clean_dev_caches",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
       "confidence_score": 1.0,
-      "source": "core_cleaner_rationale_35",
-      "target": "core_cleaner_systemcleaner_run_full_autofix"
+      "source_file": "sysdoctor/core/cleaner.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "core_cleaner_systemcleaner_clean_dev_caches",
+      "target": "utils_runner_command_exists"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sysdoctor/core/cleaner.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "core_cleaner_systemcleaner_run_full_autofix",
+      "target": "core_cleaner_systemcleaner_clean_dev_caches",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "sysdoctor/core/cleaner.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "core_cleaner_rationale_100",
+      "target": "core_cleaner_systemcleaner_run_full_autofix",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -5330,6 +5700,26 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "package_managers_apt_aptpackagemanager",
+      "target": "package_managers_apt_aptpackagemanager_clean_residual_packages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "package_managers_apt_aptpackagemanager",
+      "target": "package_managers_apt_aptpackagemanager_get_residual_packages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "sysdoctor/package_managers/apt.py",
       "source_location": "L16",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -5355,6 +5745,38 @@
       "confidence_score": 0.5,
       "source": "package_managers_apt_aptpackagemanager",
       "target": "package_managers_base_basepackagemanager"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_apt.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tests_test_apt",
+      "target": "package_managers_apt_aptpackagemanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_apt.py",
+      "source_location": "L7",
+      "weight": 0.8,
+      "source": "tests_test_apt_testaptpackagemanager",
+      "target": "package_managers_apt_aptpackagemanager",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_apt.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tests_test_apt_testaptpackagemanager_setup",
+      "target": "package_managers_apt_aptpackagemanager"
     },
     {
       "relation": "calls",
@@ -5399,6 +5821,92 @@
       "weight": 1.0,
       "source": "package_managers_apt_aptpackagemanager_is_available",
       "target": "utils_runner_command_exists"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "package_managers_apt_aptpackagemanager_clean_residual_packages",
+      "target": "package_managers_apt_aptpackagemanager_get_residual_packages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "package_managers_apt_aptpackagemanager_get_residual_packages",
+      "target": "utils_runner_command_exists"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "package_managers_apt_aptpackagemanager_get_residual_packages",
+      "target": "utils_runner_run_command"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "package_managers_apt_rationale_31",
+      "target": "package_managers_apt_aptpackagemanager_get_residual_packages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "package_managers_apt_aptpackagemanager_auto_fix",
+      "target": "package_managers_apt_aptpackagemanager_clean_residual_packages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "package_managers_apt_aptpackagemanager_clean_residual_packages",
+      "target": "utils_runner_command_exists"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "package_managers_apt_aptpackagemanager_clean_residual_packages",
+      "target": "utils_runner_run_command"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "sysdoctor/package_managers/apt.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "package_managers_apt_rationale_47",
+      "target": "package_managers_apt_aptpackagemanager_clean_residual_packages",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -6867,9 +7375,9 @@
       "source_file": "tests/test_dashboard.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_dashboard",
-      "target": "ui_dashboard_make_layout",
-      "confidence_score": 1.0
+      "target": "ui_dashboard_make_layout"
     },
     {
       "relation": "calls",
@@ -6932,9 +7440,9 @@
       "source_file": "tests/test_dashboard.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_dashboard",
-      "target": "ui_dashboard_get_top_processes",
-      "confidence_score": 1.0
+      "target": "ui_dashboard_get_top_processes"
     },
     {
       "relation": "calls",
@@ -7008,9 +7516,9 @@
       "source_file": "tests/test_dashboard.py",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_dashboard",
-      "target": "ui_dashboard_generate_dashboard_grid",
-      "confidence_score": 1.0
+      "target": "ui_dashboard_generate_dashboard_grid"
     },
     {
       "relation": "calls",
@@ -7313,12 +7821,132 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_apt.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "tests_test_apt",
+      "target": "tests_test_apt_testaptpackagemanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_apt.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "tests_test_apt_rationale_1",
+      "target": "tests_test_apt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_apt.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tests_test_apt_testaptpackagemanager",
+      "target": "tests_test_apt_testaptpackagemanager_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_apt.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "tests_test_apt_testaptpackagemanager",
+      "target": "tests_test_apt_testaptpackagemanager_test_clean_residual_packages_protects_grub_and_kernel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_apt.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tests_test_apt_testaptpackagemanager",
+      "target": "tests_test_apt_testaptpackagemanager_test_get_residual_packages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tests_test_cleaner",
+      "target": "tests_test_cleaner_testsystemcleaner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "tests_test_cleaner_rationale_1",
+      "target": "tests_test_cleaner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tests_test_cleaner_testsystemcleaner",
+      "target": "tests_test_cleaner_testsystemcleaner_setup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "tests_test_cleaner_testsystemcleaner",
+      "target": "tests_test_cleaner_testsystemcleaner_test_clean_dev_caches_dry_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "tests_test_cleaner_testsystemcleaner",
+      "target": "tests_test_cleaner_testsystemcleaner_test_clean_user_caches_dry_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tests_test_cleaner_testsystemcleaner",
+      "target": "tests_test_cleaner_testsystemcleaner_test_get_target_user_home_default",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_cleaner.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "tests_test_cleaner_testsystemcleaner",
+      "target": "tests_test_cleaner_testsystemcleaner_test_vacuum_journal_logs_success",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_dashboard.py",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_dashboard",
-      "target": "tests_test_dashboard_testdashboard",
-      "confidence_score": 1.0
+      "target": "tests_test_dashboard_testdashboard"
     },
     {
       "relation": "rationale_for",
@@ -7326,9 +7954,9 @@
       "source_file": "tests/test_dashboard.py",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_dashboard_rationale_1",
-      "target": "tests_test_dashboard",
-      "confidence_score": 1.0
+      "target": "tests_test_dashboard"
     },
     {
       "relation": "method",
@@ -7336,9 +7964,9 @@
       "source_file": "tests/test_dashboard.py",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_dashboard_testdashboard",
-      "target": "tests_test_dashboard_testdashboard_test_generate_dashboard_grid",
-      "confidence_score": 1.0
+      "target": "tests_test_dashboard_testdashboard_test_generate_dashboard_grid"
     },
     {
       "relation": "method",
@@ -7346,9 +7974,9 @@
       "source_file": "tests/test_dashboard.py",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_dashboard_testdashboard",
-      "target": "tests_test_dashboard_testdashboard_test_get_top_processes",
-      "confidence_score": 1.0
+      "target": "tests_test_dashboard_testdashboard_test_get_top_processes"
     },
     {
       "relation": "method",
@@ -7356,9 +7984,9 @@
       "source_file": "tests/test_dashboard.py",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "tests_test_dashboard_testdashboard",
-      "target": "tests_test_dashboard_testdashboard_test_make_layout",
-      "confidence_score": 1.0
+      "target": "tests_test_dashboard_testdashboard_test_make_layout"
     },
     {
       "relation": "contains",
@@ -7882,5 +8510,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "919e0c9bf05ceac9e3643723e870847c18b08d90"
+  "built_at_commit": "ebd1801eb855df29c4d6bd37ce4b2913e03cd377"
 }

@@ -35,13 +35,13 @@
     "semantic_hash": ""
   },
   "sysdoctor/core/cleaner.py": {
-    "mtime": 1787341500.5952547,
-    "ast_hash": "4e538da549dce9058ec7b42670848985",
+    "mtime": 1792410644.939992,
+    "ast_hash": "dba4ef6b5c16017383509cfe50583025",
     "semantic_hash": ""
   },
   "sysdoctor/core/health.py": {
-    "mtime": 1787341500.5952547,
-    "ast_hash": "aaf45f57679cb6d5d6ad4e28ac5bc9a8",
+    "mtime": 1792410644.939992,
+    "ast_hash": "959325b32bf632bab5fa3946e7bae430",
     "semantic_hash": ""
   },
   "sysdoctor/core/reporter.py": {
@@ -65,8 +65,8 @@
     "semantic_hash": ""
   },
   "sysdoctor/package_managers/apt.py": {
-    "mtime": 1787341500.5958304,
-    "ast_hash": "d784eee802cd71f0b389f559fc2ffde8",
+    "mtime": 1792410644.939992,
+    "ast_hash": "68cd9691fa54f9122a0882398553a116",
     "semantic_hash": ""
   },
   "sysdoctor/package_managers/base.py": {
@@ -180,8 +180,18 @@
     "semantic_hash": ""
   },
   "tests/test_dashboard.py": {
-    "mtime": 1787850325.1815262,
-    "ast_hash": "5bfdbaf878be53df4874b343a8f31462",
+    "mtime": 1792410644.939992,
+    "ast_hash": "0c195ff3da07e14b03ba8ce1fe8a590a",
+    "semantic_hash": ""
+  },
+  "tests/test_apt.py": {
+    "mtime": 1792410644.939992,
+    "ast_hash": "1997ed1e714c7caf18e4e30aed38c813",
+    "semantic_hash": ""
+  },
+  "tests/test_cleaner.py": {
+    "mtime": 1792410644.939992,
+    "ast_hash": "9a69e0d2c47893dad0061550a7d85c0a",
     "semantic_hash": ""
   }
 }
