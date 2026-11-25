@@ -61,6 +61,53 @@ class TestAptPackageManager(unittest.TestCase):
         self.assertNotIn("shim-signed", second_call_cmd)
         self.assertNotIn("linux-image-6.1", second_call_cmd)
 
+    @patch("sysdoctor.package_managers.apt.os.geteuid")
+    @patch("sysdoctor.package_managers.apt.command_exists")
+    @patch("sysdoctor.package_managers.apt.run_command")
+    def test_check_updates_non_root_skips_apt_get_update(self, mock_run, mock_exists, mock_geteuid):
+        mock_exists.return_value = True
+        mock_geteuid.return_value = 1000  # Usuário não-root
+        mock_run.return_value = (0, "", "")
+
+        self.apt.check_updates()
+
+        # Garante que 'apt-get update' NUNCA é executado sem root
+        for call_args in mock_run.call_args_list:
+            cmd = call_args[0][0]
+            self.assertFalse("apt-get" in cmd and "update" in cmd)
+
+    @patch("sysdoctor.package_managers.apt.command_exists")
+    @patch("sysdoctor.package_managers.apt.run_command")
+    def test_check_updates_security_filtering_avoids_conf_and_false_positives(self, mock_run, mock_exists):
+        mock_exists.return_value = True
+        fake_upgradable = "Listing...\ncloud-init/resolute-updates 26.2 all [upgradable from: 26.1]\nlibsecp256k1/resolute 0.4 amd64 [upgradable from: 0.3]\n"
+        fake_simulated = (
+            "Inst cloud-init [26.1] (26.2 Ubuntu:26.04/resolute-security [all])\n"
+            "Conf cloud-init (26.2 Ubuntu:26.04/resolute-security [all])\n"
+            "Inst libsecp256k1 [0.3] (0.4 Ubuntu:26.04/resolute-updates [amd64])\n"
+            "Conf libsecp256k1 (0.4 Ubuntu:26.04/resolute-updates [amd64])\n"
+        )
+        mock_run.side_effect = [
+            (0, fake_upgradable, ""),
+            (0, fake_simulated, ""),
+            (0, "", ""),
+        ]
+
+        res = self.apt.check_updates()
+        # Deve contar apenas 1 atualização de segurança (cloud-init), e NÃO 2 (por causa do Conf) e NÃO a libsecp256k1
+        self.assertEqual(res["security"], 1)
+        self.assertEqual(res["total"], 2)
+
+    @patch("sysdoctor.package_managers.apt.command_exists")
+    @patch("sysdoctor.package_managers.apt.run_command")
+    def test_is_locked_prevents_autofix(self, mock_run, mock_exists):
+        mock_exists.return_value = True
+        mock_run.return_value = (0, "12345", "")  # fuser encontrou PID segurando trava
+
+        succ, msg = self.apt.auto_fix(dry_run=False)
+        self.assertFalse(succ)
+        self.assertIn("bloqueado por outro processo", msg)
+
 
 if __name__ == "__main__":
     unittest.main()

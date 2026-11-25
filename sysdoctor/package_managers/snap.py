@@ -26,7 +26,7 @@ class SnapPackageManager(BasePackageManager):
         disabled = []
         for line in out.splitlines()[1:]:
             parts = line.split()
-            if len(parts) >= 6 and parts[-1] == "disabled":
+            if len(parts) >= 6 and "disabled" in parts[-1].split(","):
                 disabled.append((parts[0], parts[2]))
         return disabled
 
@@ -35,10 +35,16 @@ class SnapPackageManager(BasePackageManager):
         if not self.is_available():
             return result
 
-        disabled = self.get_disabled_revisions()
-        result["total"] = len(disabled)
-        if disabled:
-            result["details"] = [f"{name} (rev {rev} desativado)" for name, rev in disabled[:10]]
+        code, out, _ = run_command(["snap", "refresh", "--list"], timeout=45)
+        if code == 0 and out:
+            lines = out.splitlines()
+            updatable = []
+            for line in lines:
+                parts = line.split()
+                if parts and parts[0].lower() not in ("name", "nenhuma", "all"):
+                    updatable.append(line.strip())
+            result["total"] = len(updatable)
+            result["details"] = updatable[:10]
 
         return result
 

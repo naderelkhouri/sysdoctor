@@ -79,6 +79,9 @@ sysdoctor
 | --- | --- |
 | `-r`, `--report` | Gera e exibe um relatório completo de saúde no terminal. |
 | `-f`, `--fix` | Executa a auto-correção e limpeza completa do sistema (`sudo` recomendado). |
+| `-i`, `--interactive` | Executa a limpeza em modo de seleção seletiva interativa. |
+| `--recycle-swap` | Recicla e esvazia a memória Swap com segurança (`swapoff`/`swapon`). |
+| `--notify` | Dispara notificação gráfica nativa na área de trabalho em caso de alertas. |
 | `-m`, `--monitor` | Abre a interface de monitoramento interativo em tempo real. |
 | `-j`, `--json` | Retorna o relatório em JSON para pipelines ou ferramentas de monitoramento. |
 | `--dry-run` | Simula a execução sem aplicar alterações reais no sistema. |

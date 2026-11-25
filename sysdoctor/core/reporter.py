@@ -38,7 +38,12 @@ def build_full_report() -> Dict[str, Any]:
             "uptime_seconds": metrics.uptime_seconds,
             "cpu_percent": metrics.cpu_percent,
             "memory_percent": metrics.memory_percent,
+            "memory_total_bytes": metrics.memory_total_bytes,
+            "memory_used_bytes": metrics.memory_used_bytes,
+            "memory_available_bytes": metrics.memory_available_bytes,
             "swap_percent": metrics.swap_percent,
+            "swap_total_bytes": metrics.swap_total_bytes,
+            "swap_used_bytes": metrics.swap_used_bytes,
             "disks": [
                 {
                     "mountpoint": d.mountpoint,
@@ -51,6 +56,52 @@ def build_full_report() -> Dict[str, Any]:
             ],
             "failed_systemd_units": metrics.failed_systemd_units,
             "reboot_required": metrics.reboot_required,
+            "tuning": {
+                "zram_active": metrics.zram_active,
+                "swappiness": metrics.swappiness,
+            },
+            "hardware": {
+                "max_temperature": metrics.sensors.max_temperature if metrics.sensors else None,
+                "battery_percent": metrics.sensors.battery_percent if metrics.sensors else None,
+                "battery_plugged": metrics.sensors.battery_plugged if metrics.sensors else None,
+                "temperatures": metrics.sensors.temperatures if metrics.sensors else {},
+            },
+            "disk_hogs": [
+                {
+                    "path": h.path,
+                    "size_bytes": h.size_bytes,
+                    "human_size": h.human_size,
+                }
+                for h in metrics.disk_hogs
+            ],
+            "top_processes": {
+                "cpu": [
+                    {
+                        "pid": p.pid,
+                        "name": p.name,
+                        "cpu_percent": p.cpu_percent,
+                        "memory_percent": p.memory_percent,
+                    }
+                    for p in metrics.top_cpu_processes
+                ],
+                "memory": [
+                    {
+                        "pid": p.pid,
+                        "name": p.name,
+                        "memory_percent": p.memory_percent,
+                        "rss_bytes": p.memory_rss_bytes,
+                    }
+                    for p in metrics.top_memory_processes
+                ],
+                "swap": [
+                    {
+                        "pid": p.pid,
+                        "name": p.name,
+                        "swap_bytes": p.swap_bytes,
+                    }
+                    for p in metrics.top_swap_processes
+                ],
+            },
         },
         "packages": pkg_summary,
         "health": {

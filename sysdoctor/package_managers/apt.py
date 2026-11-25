@@ -75,15 +75,49 @@ class AptPackageManager(BasePackageManager):
             return True, msg
         return False, f"Falha ao expurgar pacotes residuais: {err}"
 
+    @staticmethod
+    def is_locked() -> Tuple[bool, str]:
+        """
+        Verifica se outro processo (unattended-upgrades, apt-get, software-center)
+        está segurando travas de banco de dados do APT/Dpkg.
+        """
+        lock_files = [
+            "/var/lib/dpkg/lock-frontend",
+            "/var/lib/dpkg/lock",
+            "/var/lib/apt/lists/lock",
+        ]
+        if command_exists("fuser"):
+            for lf in lock_files:
+                if os.path.exists(lf):
+                    code, out, _ = run_command(["fuser", lf], timeout=5)
+                    if code == 0 and out.strip():
+                        return True, f"APT bloqueado por outro processo em {lf} (PID: {out.strip()})."
+
+        if os.geteuid() == 0:
+            import fcntl
+            for lf in lock_files:
+                if os.path.exists(lf):
+                    try:
+                        with open(lf, "a") as f:
+                            fcntl.flock(f, fcntl.LOCK_EX | fcntl.LOCK_NB)
+                            fcntl.flock(f, fcntl.LOCK_UN)
+                    except (BlockingIOError, PermissionError):
+                        return True, f"APT bloqueado: impossível obter trava exclusiva em {lf}."
+                    except Exception:
+                        pass
+
+        return False, ""
+
     def check_updates(self) -> Dict[str, Any]:
         result = {"total": 0, "security": 0, "phased": False, "details": []}
         if not self.is_available():
             return result
 
-        # Atualiza o índice silenciosamente se possível
-        run_command(["apt-get", "update", "-qq"], timeout=60)
+        # Atualiza o índice silenciosamente se for root (evita erro/lentidão como usuário comum)
+        if os.geteuid() == 0:
+            run_command(["apt-get", "update", "-qq"], timeout=60)
 
-        # Pacientes atualizáveis
+        # Pacotes atualizáveis
         code, out, _ = run_command(["apt", "list", "--upgradable"], timeout=30)
         if code == 0 and out:
             lines = [l for l in out.splitlines() if "/" in l and not l.startswith("Listing...")]
@@ -93,7 +127,12 @@ class AptPackageManager(BasePackageManager):
         # Verificação de segurança simulada
         code_sec, out_sec, _ = run_command(["apt-get", "-s", "upgrade"], timeout=30)
         if code_sec == 0 and out_sec:
-            sec_lines = [l for l in out_sec.splitlines() if "security" in l.lower() or "sec" in l.lower()]
+            # Filtra apenas linhas 'Inst <pacote>' com origem de segurança
+            # Evita linhas 'Conf' duplicadas e correspondências falsas na sílaba 'sec'
+            sec_lines = [
+                l for l in out_sec.splitlines()
+                if l.startswith("Inst ") and any(tag in l.lower() for tag in ("-security", "/security", " security"))
+            ]
             result["security"] = len(sec_lines)
 
         # Verificação de atualizações faseadas
@@ -106,6 +145,10 @@ class AptPackageManager(BasePackageManager):
     def auto_fix(self, dry_run: bool = False) -> Tuple[bool, str]:
         if not self.is_available():
             return False, "APT não está disponível."
+
+        locked, lock_reason = self.is_locked()
+        if locked and not dry_run:
+            return False, f"Operação cancelada: {lock_reason} Aguarde o término ou encerre o processo conflitante."
 
         env = dict(os.environ, DEBIAN_FRONTEND="noninteractive")
         cmds = [

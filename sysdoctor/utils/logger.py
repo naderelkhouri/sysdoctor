@@ -18,7 +18,7 @@ def setup_logger(verbose: bool = False) -> logging.Logger:
     # Console Handler
     ch = logging.StreamHandler(sys.stderr)
     ch.setLevel(logging.DEBUG if verbose else logging.WARNING)
-    formatter = logging.formatters = logging.Formatter(
+    formatter = logging.Formatter(
         "[%(asctime)s] [%(levelname)s] %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
     )
     ch.setFormatter(formatter)

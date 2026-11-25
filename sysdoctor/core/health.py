@@ -37,6 +37,9 @@ def evaluate_health(
     actions: List[str] = []
 
     # 1. CPU
+    top_cpu = metrics.top_cpu_processes[0] if metrics.top_cpu_processes else None
+    cpu_detail = f" Maior consumidor: {top_cpu.name} (PID {top_cpu.pid}, {top_cpu.cpu_percent:.1f}% CPU)." if top_cpu and top_cpu.cpu_percent > 5 else ""
+
     if metrics.cpu_percent > 90:
         score -= 15
         items.append(
@@ -44,8 +47,12 @@ def evaluate_health(
                 category="CPU",
                 severity="CRITICAL",
                 title="Processador Sobrecarregado",
-                message=f"Uso de CPU muito alto: {metrics.cpu_percent:.1f}%",
-                action_suggestion="Verifique processos com alto consumo usando o monitor ou htop.",
+                message=f"Uso de CPU muito alto: {metrics.cpu_percent:.1f}%.{cpu_detail}",
+                action_suggestion=(
+                    f"Considere finalizar {top_cpu.name} (PID {top_cpu.pid}) ou verificar processos via htop."
+                    if top_cpu
+                    else "Verifique processos com alto consumo usando o monitor ou htop."
+                ),
             )
         )
     elif metrics.cpu_percent > 75:
@@ -55,12 +62,15 @@ def evaluate_health(
                 category="CPU",
                 severity="WARNING",
                 title="Uso Elevado de CPU",
-                message=f"Uso de CPU acima do ideal: {metrics.cpu_percent:.1f}%",
+                message=f"Uso de CPU acima do ideal: {metrics.cpu_percent:.1f}%.{cpu_detail}",
                 action_suggestion="Monitore os processos em execução.",
             )
         )
 
     # 2. Memória RAM
+    top_mem = metrics.top_memory_processes[0] if metrics.top_memory_processes else None
+    mem_detail = f" Maior consumidor: {top_mem.name} (PID {top_mem.pid}, {top_mem.memory_percent:.1f}% RAM)." if top_mem and top_mem.memory_percent > 5 else ""
+
     if metrics.memory_percent > 90:
         score -= 15
         items.append(
@@ -68,8 +78,12 @@ def evaluate_health(
                 category="Memória",
                 severity="CRITICAL",
                 title="Pouca Memória RAM Disponível",
-                message=f"Uso de RAM crítico: {metrics.memory_percent:.1f}%",
-                action_suggestion="Encerre aplicações pesadas desnecessárias.",
+                message=f"Uso de RAM crítico: {metrics.memory_percent:.1f}%.{mem_detail}",
+                action_suggestion=(
+                    f"Considere fechar {top_mem.name} (PID {top_mem.pid}) para liberar memória."
+                    if top_mem
+                    else "Encerre aplicações pesadas desnecessárias."
+                ),
             )
         )
     elif metrics.memory_percent > 80:
@@ -79,12 +93,15 @@ def evaluate_health(
                 category="Memória",
                 severity="WARNING",
                 title="Uso Elevado de Memória RAM",
-                message=f"Uso de RAM elevado: {metrics.memory_percent:.1f}%",
+                message=f"Uso de RAM elevado: {metrics.memory_percent:.1f}%.{mem_detail}",
                 action_suggestion="Fique atento ao consumo de memória.",
             )
         )
 
     # 3. Memória Swap
+    top_swap = metrics.top_swap_processes[0] if metrics.top_swap_processes else None
+    swap_detail = f" Maior consumidor no Swap: {top_swap.name} (PID {top_swap.pid})." if top_swap and top_swap.swap_bytes > 0 else ""
+
     if metrics.swap_total_bytes > 0:
         if metrics.swap_percent > 90:
             score -= 10
@@ -93,7 +110,7 @@ def evaluate_health(
                     category="Swap",
                     severity="CRITICAL",
                     title="Memória Swap Quase Esgotada",
-                    message=f"Uso de Swap crítico: {metrics.swap_percent:.1f}%",
+                    message=f"Uso de Swap crítico: {metrics.swap_percent:.1f}%.{swap_detail}",
                     action_suggestion="Considere encerrar processos pesados ou reciclar o swap (swapoff/swapon).",
                 )
             )
@@ -104,7 +121,7 @@ def evaluate_health(
                     category="Swap",
                     severity="WARNING",
                     title="Uso Elevado de Memória Swap",
-                    message=f"Uso de Swap elevado: {metrics.swap_percent:.1f}%",
+                    message=f"Uso de Swap elevado: {metrics.swap_percent:.1f}%.{swap_detail}",
                     action_suggestion="Monitore os processos em execução e o uso de memória virtual.",
                 )
             )
@@ -185,6 +202,36 @@ def evaluate_health(
                 title="Reinicialização Necessária",
                 message="O sistema requer reinicialização para aplicar atualizações do kernel/bibliotecas.",
                 action_suggestion="Reinicie o sistema assim que conveniente.",
+            )
+        )
+
+    # 7. Sensores de Temperatura
+    if metrics.sensors and metrics.sensors.max_temperature >= 85.0:
+        is_crit_temp = metrics.sensors.max_temperature >= 92.0
+        score -= 15 if is_crit_temp else 5
+        items.append(
+            DiagnosticItem(
+                category="Hardware",
+                severity="CRITICAL" if is_crit_temp else "WARNING",
+                title="Temperatura Crítica de Hardware" if is_crit_temp else "Temperatura Elevada de Hardware",
+                message=f"Temperatura máxima registrada nos sensores: {metrics.sensors.max_temperature:.1f}°C.",
+                action_suggestion="Verifique a saída de ar e ventilação, ou finalize processos que sobrecarregam a CPU/GPU.",
+            )
+        )
+
+    # 8. Alerta Informativo de Tuning (Swap em disco sem ZRAM)
+    if (
+        metrics.swap_total_bytes > 0
+        and not metrics.zram_active
+        and metrics.swap_percent > 85
+    ):
+        items.append(
+            DiagnosticItem(
+                category="Tuning",
+                severity="WARNING",
+                title="Ausência de Compressão de Memória (ZRAM)",
+                message="Swap em disco saturado sem módulo de compressão ZRAM/Zswap ativo.",
+                action_suggestion="Recomenda-se habilitar ZRAM (pacote zram-tools) para reduzir gargalos de I/O em disco.",
             )
         )
 
